@@ -60,7 +60,7 @@ The introduction of a modularized toolset will ensure RFA owns its custom tools 
 
 ## **Cosmetics & Marketability**
 
-In order for RFA to stand out, the presentation side of the league must be focused upon. As RFA has been doing, many leagues run the exact same structure and can seem copy-paste to players.
+In order for RFA to stand out, the presentation side of the league must be focused upon. Similar to RFA, many leagues operate in the exact same structure and can seem like copy-paste communities to players.
 
 Most leagues are only distinguishable by their unique toolbases. We plan to put effort into features that enhance immersion and help market the league to new audiences.
 
