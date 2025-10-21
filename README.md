@@ -42,7 +42,9 @@ This cross-checking is again made possible with **Roblox–Google Sheets API int
 
 ---
 
-## **Tool Modularization**
+## **Toolbase**
+
+### *1. Modularization*
 
 Across most leagues, the tool setup and structure is developed more or less the same. Currently, each player has each tool copied to their player, using separate LocalScripts to tie the keybinds.
 
@@ -54,7 +56,21 @@ This modular structure reduces redundancy, lowers the memory footprint, and impr
 
 The end result is a leaner, more efficient tool system. In a more efficient environment, we can hope to mitigate problems related to reach and the react system.
 
-The introduction of a modularized toolset will ensure RFA owns its custom tools and practically eliminate any threat of a blacklist by another league.
+RFA will develop it's own custom modularized toolset, eliminating any threat of a blacklist by another league.
+
+---
+
+### *2. Mossing*
+
+A key gameplay improvement focuses on refining how **“mosses”** are detected and resolved. When a player reacts with the ball above a certain Y position and velocity, the system identifies that a moss attempt has occurred. From that moment, a short reaction window (approximately 0.4 seconds) opens, during which the script monitors other players who also react to the same ball. At the end of that window, the system compares the Y positions of each reaction. The player who makes contact at the highest point—meaning the highest Y position—will **win the moss**. Other reactions within that time frame are automatically declined or treated as “second touches,” creating a more consistent and **skill-based outcome**.
+
+This approach eliminates latency-based inconsistencies that often affect traditional mossing systems. Instead, the winner is determined purely by **timing and precision**.
+
+Positioning also plays an important role. Being slightly in front of another player provides a small advantage, as it allows for easier access to higher ball positions. This naturally rewards good positioning rather than relying on lucky reactions from behind. Importantly, this system applies universally **across all tools—not just headers**. For example, successfully mossing with a shoot tool results in a more powerful and challenging shot for goalkeepers to handle. This remains balanced, however, since executing such a moss is significantly more difficult due to the tool’s naturally lower reaction height.
+
+Aerial shots, such as bicycle kicks, are **intentionally designed to be stronger**. This encourages their use despite the header’s height advantage. Headers remain slightly weaker but still deliver a satisfying and effective outcome when timed well.
+
+Low mossing is currently under testing. In its present state, it follows the same comparison system, but instead of checking Y position, it determines the winner based on **which player’s reaction is closest to the ball on the passer’s client.** Further details on this mechanic will be provided once testing concludes.
 
 ---
 
