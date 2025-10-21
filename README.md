@@ -71,6 +71,8 @@ Positioning also plays an important role. Being slightly in front of another pla
 Aerial shots, such as bicycle kicks, are **intentionally designed to be stronger**. This encourages their use despite the header’s height advantage. Headers remain slightly weaker but still deliver a satisfying and effective outcome when timed well.
 
 Low mossing is currently under testing. In its present state, it follows the same comparison system, but instead of checking Y position, it determines the winner based on **which player’s reaction is closest to the ball on the passer’s client.** Further details on this mechanic will be provided once testing concludes.
+![blud (1)](https://github.com/user-attachments/assets/30c05279-e0e2-48eb-949e-84aed618e261)
+_240 ms moss vs 80 ms upon both reacting_
 
 ---
 
